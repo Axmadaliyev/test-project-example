@@ -1,0 +1,48 @@
+server:
+  port: 80
+  error:
+    include-message: never
+spring:
+  sql:
+    init:
+      mode: always
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-44-194-4-127.compute-1.amazonaws.com:5432/d4q9nn5br1hrdu
+    username: jtvggnqracxbqv
+    password: d56d323ed787309656a585c43a100b8018fe125edab5f52666ccc13bac3415fd
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  mvc:
+    servlet:
+      path: /api
+
+  main:
+    lazy-initialization: true
+
+  jackson:
+    date-format: yyyy-MM-dd
+
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    password: befoyda1998
+    username: farruxbekaxmadaliyev850@gmail.com
+
+
+  servlet:
+    multipart:
+      max-file-size: 99MB
+      max-request-size: 9999MB
+
+jwt:
+  secretKey: SupperKey
+  expireTime: 86400000
+
+
+
+
